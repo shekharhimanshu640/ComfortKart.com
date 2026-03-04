@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Comfort Kart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Comfort Kart</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="profile.html" aria-label="Profile"><i class="fas fa-user"></i></a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop All Products</h1>
+            <p>Discover your perfect style from our exclusive collection</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="filter-section">
+                        <h3>Search Products</h3>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="all" checked>
+                                    <span>All Products</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="men">
+                                    <span>Men's Fashion</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="women">
+                                    <span>Women's Fashion</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="kids">
+                                    <span>Kids' Fashion</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="accessories">
+                                    <span>Accessories</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="5000" value="2500" class="price-slider" aria-label="Price Range">
+                            <div class="price-values">
+                                <span>₹0</span>
+                                <span>₹5000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Size</h3>
+                        <div class="size-filter">
+                            <button class="size-btn" aria-label="Extra Small">XS</button>
+                            <button class="size-btn" aria-label="Small">S</button>
+                            <button class="size-btn active" aria-label="Medium">M</button>
+                            <button class="size-btn" aria-label="Large">L</button>
+                            <button class="size-btn" aria-label="Extra Large">XL</button>
+                            <button class="size-btn" aria-label="Double Extra Large">XXL</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3>Color</h3>
+                        <div class="color-filter">
+                            <button class="color-btn" style="background: #000;" aria-label="Black"></button>
+                            <button class="color-btn" style="background: #fff; border: 1px solid #ddd;" aria-label="White"></button>
+                            <button class="color-btn" style="background: #3498db;" aria-label="Blue"></button>
+                            <button class="color-btn" style="background: #e74c3c;" aria-label="Red"></button>
+                            <button class="color-btn" style="background: #2ecc71;" aria-label="Green"></button>
+                            <button class="color-btn" style="background: #f39c12;" aria-label="Orange"></button>
+                            <button class="color-btn" style="background: #9b59b6;" aria-label="Purple"></button>
+                            <button class="color-btn" style="background: #34495e;" aria-label="Dark Blue"></button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline btn-full">Clear Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="shop-content">
+                    <div class="shop-toolbar">
+                        <div class="results-count">
+                            <p>Showing <strong>1-12</strong> of <strong>48</strong> results</p>
+                        </div>
+                        <div class="sort-options">
+                            <select class="sort-select" aria-label="Sort Options">
+                                <option>Sort by: Default</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                                <option>Best Selling</option>
+                            </select>
+                            <div class="view-toggle">
+                                <button class="view-btn active" aria-label="Grid View"><i class="fas fa-th"></i></button>
+                                <button class="view-btn" aria-label="List View"><i class="fas fa-list"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Classic White T-Shirt</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹499</span>
+                                    <span class="old-price">₹999</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-badge sale">-50%</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-vest"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Leather Jacket</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹1,999</span>
+                                    <span class="old-price">₹3,999</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Formal Shirt Blue</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹899</span>
+                                    <span class="old-price">₹1,499</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-badge">Hot</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-socks"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Slim Fit Jeans</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.2)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹1,299</span>
+                                    <span class="old-price">₹2,199</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-hat-cowboy"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Casual Cap</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹299</span>
+                                    <span class="old-price">₹599</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <div class="product-badge">New</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-shoe-prints"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Sports Sneakers</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹2,499</span>
+                                    <span class="old-price">₹3,999</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Polo T-Shirt</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.3)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹699</span>
+                                    <span class="old-price">₹1,299</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product-card">
+                            <div class="product-badge sale">-40%</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-glasses"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Sunglasses</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.6)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹599</span>
+                                    <span class="old-price">₹999</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-mitten"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Winter Gloves</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.1)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹399</span>
+                                    <span class="old-price">₹699</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 10 -->
+                        <div class="product-card">
+                            <div class="product-badge">Trending</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-vest"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Hooded Sweatshirt</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹1,199</span>
+                                    <span class="old-price">₹2,199</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 11 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Formal Blazer</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.4)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹2,999</span>
+                                    <span class="old-price">₹4,999</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Product 12 -->
+                        <div class="product-card">
+                            <div class="product-badge">Hot</div>
+                            <div class="product-image">
+                                <div class="placeholder-img">
+                                    <i class="fas fa-socks"></i>
+                                </div>
+                                <div class="product-overlay">
+                                    <button class="quick-view-btn">Quick View</button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Casual Shorts</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.2)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="price">₹599</span>
+                                    <span class="old-price">₹1,199</span>
+                                </div>
+                                <button class="btn btn-add-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn" disabled aria-label="Previous Page"><i class="fas fa-chevron-left"></i></button>
+                        <button class="page-btn active" aria-label="Page 1">1</button>
+                        <button class="page-btn" aria-label="Page 2">2</button>
+                        <button class="page-btn" aria-label="Page 3">3</button>
+                        <button class="page-btn" aria-label="Page 4">4</button>
+                        <button class="page-btn" aria-label="Next Page"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Comfort Kart</span>
+                    </div>
+                    <p>Your one-stop destination for comfortable and stylish clothing.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Kart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

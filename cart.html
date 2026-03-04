@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Comfort Kart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Comfort Kart</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" class="active" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">3</span></a>
+                <a href="profile.html" aria-label="Profile"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-layout">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2>Cart Items (3)</h2>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Premium Cotton T-Shirt</h3>
+                            <p class="item-specs">
+                                <span>Size: <strong>M</strong></span>
+                                <span>Color: <strong>White</strong></span>
+                            </p>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i> Save for Later</button>
+                                <button class="action-btn remove-btn"><i class="fas fa-trash"></i> Remove</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="price">₹499</div>
+                            <div class="old-price">₹999</div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <button class="qty-btn minus" aria-label="Decrease Quantity"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" class="qty-input" aria-label="Quantity">
+                            <button class="qty-btn plus" aria-label="Increase Quantity"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="cart-item-total">
+                            <div class="total-price">₹499</div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-vest"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Denim Jacket</h3>
+                            <p class="item-specs">
+                                <span>Size: <strong>L</strong></span>
+                                <span>Color: <strong>Blue</strong></span>
+                            </p>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i> Save for Later</button>
+                                <button class="action-btn remove-btn"><i class="fas fa-trash"></i> Remove</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="price">₹1,499</div>
+                            <div class="old-price">₹2,999</div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <button class="qty-btn minus" aria-label="Decrease Quantity"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="2" min="1" class="qty-input" aria-label="Quantity">
+                            <button class="qty-btn plus" aria-label="Increase Quantity"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="cart-item-total">
+                            <div class="total-price">₹2,998</div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-socks"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Casual Joggers</h3>
+                            <p class="item-specs">
+                                <span>Size: <strong>M</strong></span>
+                                <span>Color: <strong>Black</strong></span>
+                            </p>
+                            <div class="item-actions">
+                                <button class="action-btn"><i class="fas fa-heart"></i> Save for Later</button>
+                                <button class="action-btn remove-btn"><i class="fas fa-trash"></i> Remove</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="price">₹899</div>
+                            <div class="old-price">₹1,799</div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <button class="qty-btn minus" aria-label="Decrease Quantity"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" class="qty-input" aria-label="Quantity">
+                            <button class="qty-btn plus" aria-label="Increase Quantity"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="cart-item-total">
+                            <div class="total-price">₹899</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <a href="shop.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                        <button class="btn btn-secondary">Apply</button>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal (4 items)</span>
+                        <span>₹4,396</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span class="discount">-₹2,199</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Charges</span>
+                        <span class="free">FREE</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total">
+                        <span>Total Amount</span>
+                        <span>₹4,396</span>
+                    </div>
+                    <div class="savings-info">
+                        <i class="fas fa-check-circle"></i>
+                        <span>You will save ₹2,199 on this order</span>
+                    </div>
+
+                    <a href="checkout.html" class="btn btn-primary btn-full">Proceed to Checkout</a>
+
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Kart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

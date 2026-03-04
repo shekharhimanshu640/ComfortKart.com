@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Comfort Kart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Comfort Kart</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="profile.html" class="active" aria-label="Profile"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-user-info">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Rahul Kumar</h3>
+                        <p>rahul@example.com</p>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#" class="profile-nav-item active">
+                            <i class="fas fa-user"></i>
+                            <span>My Profile</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>My Orders</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Addresses</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payment Methods</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-bell"></i>
+                            <span>Notifications</span>
+                        </a>
+                        <a href="#" class="profile-nav-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="#" class="profile-nav-item logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="profile-content">
+                    <!-- Profile Info Tab -->
+                    <div class="profile-tab active" id="profile-info">
+                        <h2>My Profile</h2>
+                        
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-name">Full Name</label>
+                                    <input type="text" id="profile-name" value="Rahul Kumar">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-email">Email Address</label>
+                                    <input type="email" id="profile-email" value="rahul@example.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-phone">Phone Number</label>
+                                    <input type="tel" id="profile-phone" value="+91 9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-dob">Date of Birth</label>
+                                    <input type="date" id="profile-dob" value="1990-01-15">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="gender" value="male" checked>
+                                        <span>Male</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gender" value="female">
+                                        <span>Female</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gender" value="other">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Profile</button>
+                        </form>
+
+                        <div class="profile-section-divider"></div>
+
+                        <h3>Change Password</h3>
+                        <form class="password-form">
+                            <div class="form-group">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" id="current-password">
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">New Password</label>
+                                <input type="password" id="new-password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-new-password">Confirm New Password</label>
+                                <input type="password" id="confirm-new-password">
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Change Password</button>
+                        </form>
+                    </div>
+
+                    <!-- Orders Tab -->
+                    <div class="profile-tab" id="orders">
+                        <h2>My Orders</h2>
+                        
+                        <div class="orders-list">
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <span class="order-id">Order #CK123456</span>
+                                        <span class="order-date">Placed on Jan 15, 2024</span>
+                                    </div>
+                                    <span class="order-status delivered">Delivered</span>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <div class="order-item-image">
+                                            <div class="placeholder-img small">
+                                                <i class="fas fa-tshirt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="order-item-details">
+                                            <h4>Premium Cotton T-Shirt</h4>
+                                            <p>Size: M | Color: White | Qty: 1</p>
+                                        </div>
+                                        <div class="order-item-price">₹499</div>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">Total: ₹499</div>
+                                    <div class="order-actions">
+                                        <button class="btn btn-outline btn-small">View Details</button>
+                                        <button class="btn btn-secondary btn-small">Reorder</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <span class="order-id">Order #CK123457</span>
+                                        <span class="order-date">Placed on Jan 20, 2024</span>
+                                    </div>
+                                    <span class="order-status processing">Processing</span>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <div class="order-item-image">
+                                            <div class="placeholder-img small">
+                                                <i class="fas fa-vest"></i>
+                                            </div>
+                                        </div>
+                                        <div class="order-item-details">
+                                            <h4>Denim Jacket</h4>
+                                            <p>Size: L | Color: Blue | Qty: 1</p>
+                                        </div>
+                                        <div class="order-item-price">₹1,499</div>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">Total: ₹1,499</div>
+                                    <div class="order-actions">
+                                        <button class="btn btn-outline btn-small">Track Order</button>
+                                        <button class="btn btn-danger btn-small">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Kart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

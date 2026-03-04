@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Comfort Kart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Comfort Kart</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="profile.html" aria-label="Profile"><i class="fas fa-user"></i></a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="shop.html">Shop</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Premium Cotton T-Shirt</span>
+        </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="product-badge">New</div>
+                        <div class="placeholder-img large">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-detail-info">
+                    <h1 class="product-title">Premium Cotton T-Shirt</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5) 128 Reviews</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <div class="price-main">₹499</div>
+                        <div class="price-old">₹999</div>
+                        <div class="price-discount">50% OFF</div>
+                    </div>
+
+                    <div class="price-note">
+                        <i class="fas fa-tags"></i>
+                        <span>Inclusive of all taxes</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Experience ultimate comfort with our Premium Cotton T-Shirt. Made from 100% pure cotton, this t-shirt offers breathability and softness that lasts all day. Perfect for casual outings or relaxed home wear.</p>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <h4>Select Size</h4>
+                            <div class="size-options">
+                                <button class="size-option">XS</button>
+                                <button class="size-option">S</button>
+                                <button class="size-option active">M</button>
+                                <button class="size-option">L</button>
+                                <button class="size-option">XL</button>
+                                <button class="size-option">XXL</button>
+                            </div>
+                            <a href="#" class="size-guide">Size Guide</a>
+                        </div>
+
+                        <div class="option-group">
+                            <h4>Select Color</h4>
+                            <div class="color-options">
+                                <button class="color-option active" style="background: #fff; border: 2px solid #333;" aria-label="White"></button>
+                                <button class="color-option" style="background: #000;" aria-label="Black"></button>
+                                <button class="color-option" style="background: #3498db;" aria-label="Blue"></button>
+                                <button class="color-option" style="background: #e74c3c;" aria-label="Red"></button>
+                                <button class="color-option" style="background: #2ecc71;" aria-label="Green"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus" aria-label="Decrease Quantity"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" class="qty-input" aria-label="Quantity">
+                            <button class="qty-btn plus" aria-label="Increase Quantity"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-primary btn-large">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-large">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="btn-icon-large" aria-label="Add to Wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h5>Free Delivery</h5>
+                                <p>On orders above ₹999</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-undo"></i>
+                            <div>
+                                <h5>7 Days Return</h5>
+                                <p>Easy return policy</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h5>Secure Payment</h5>
+                                <p>100% secure checkout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (128)</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our Premium Cotton T-Shirt is crafted from the finest quality cotton, ensuring maximum comfort and durability. The fabric is soft, breathable, and perfect for everyday wear. Whether you're heading to work, meeting friends, or just relaxing at home, this t-shirt is your perfect companion.</p>
+                        
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>100% Pure Cotton Material</li>
+                            <li>Soft and Breathable Fabric</li>
+                            <li>Regular Fit Design</li>
+                            <li>Comfortable Round Neck</li>
+                            <li>Machine Washable</li>
+                            <li>Available in Multiple Colors</li>
+                            <li>Pre-shrunk for Perfect Fit</li>
+                        </ul>
+
+                        <h4>Care Instructions:</h4>
+                        <ul>
+                            <li>Machine wash cold with similar colors</li>
+                            <li>Do not bleach</li>
+                            <li>Tumble dry low</li>
+                            <li>Iron on medium heat if needed</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="specifications">
+                        <h3>Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td><strong>Material</strong></td>
+                                <td>100% Cotton</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fit</strong></td>
+                                <td>Regular Fit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Neck Type</strong></td>
+                                <td>Round Neck</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sleeve Type</strong></td>
+                                <td>Short Sleeve</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pattern</strong></td>
+                                <td>Solid</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Occasion</strong></td>
+                                <td>Casual</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Country of Origin</strong></td>
+                                <td>India</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        
+                        <div class="review-summary">
+                            <div class="rating-overview">
+                                <div class="rating-score">4.5</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>Based on 128 reviews</p>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 <i class="fas fa-star"></i></span>
+                                    <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 <i class="fas fa-star"></i></span>
+                                    <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 <i class="fas fa-star"></i></span>
+                                    <div class="bar"><div class="fill" style="width: 7%;"></div></div>
+                                    <span>7%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 <i class="fas fa-star"></i></span>
+                                    <div class="bar"><div class="fill" style="width: 2%;"></div></div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 <i class="fas fa-star"></i></span>
+                                    <div class="bar"><div class="fill" style="width: 1%;"></div></div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">R</div>
+                                        <div>
+                                            <h5>Rahul Kumar</h5>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 days ago</span>
+                                </div>
+                                <p class="review-text">Excellent quality! The fabric is soft and comfortable. Fits perfectly. Highly recommended!</p>
+                                <div class="review-helpful">
+                                    <button><i class="fas fa-thumbs-up"></i> Helpful (12)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">P</div>
+                                        <div>
+                                            <h5>Priya Sharma</h5>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 week ago</span>
+                                </div>
+                                <p class="review-text">Good product for the price. Material is nice but the color was slightly different from the image.</p>
+                                <div class="review-helpful">
+                                    <button><i class="fas fa-thumbs-up"></i> Helpful (8)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">A</div>
+                                        <div>
+                                            <h5>Amit Singh</h5>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 weeks ago</span>
+                                </div>
+                                <p class="review-text">Amazing t-shirt! Very comfortable and the quality is outstanding. Will definitely buy more.</p>
+                                <div class="review-helpful">
+                                    <button><i class="fas fa-thumbs-up"></i> Helpful (15)</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline">Load More Reviews</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-vest"></i>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Casual Hoodie</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,199</span>
+                                <span class="old-price">₹2,199</span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-socks"></i>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Slim Fit Jeans</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,299</span>
+                                <span class="old-price">₹2,599</span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Polo Shirt</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹699</span>
+                                <span class="old-price">₹1,299</span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="placeholder-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>V-Neck T-Shirt</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.2)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹549</span>
+                                <span class="old-price">₹1,099</span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Kart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

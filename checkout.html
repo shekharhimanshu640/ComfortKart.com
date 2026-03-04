@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Comfort Kart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Comfort Kart</span>
+                </a>
+            </div>
+            <div class="checkout-steps">
+                <div class="step active">
+                    <span class="step-number">1</span>
+                    <span class="step-name">Cart</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step active">
+                    <span class="step-number">2</span>
+                    <span class="step-name">Checkout</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <span class="step-name">Payment</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Checkout Form -->
+                <div class="checkout-form-container">
+                    <h2>Billing & Shipping Details</h2>
+                    
+                    <form class="checkout-form" id="checkoutForm">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkout-name">Full Name *</label>
+                                    <input type="text" id="checkout-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkout-email">Email Address *</label>
+                                    <input type="email" id="checkout-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkout-phone">Phone Number *</label>
+                                    <input type="tel" id="checkout-phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="alt-phone">Alternate Phone</label>
+                                    <input type="tel" id="alt-phone" name="alt_phone">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-map-marker-alt"></i> Shipping Address</h3>
+                            <div class="form-group">
+                                <label for="address">Address Line 1 *</label>
+                                <input type="text" id="address" name="address" placeholder="House no., Building name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address2">Address Line 2</label>
+                                <input type="text" id="address2" name="address2" placeholder="Road name, Area, Colony">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State *</label>
+                                    <select id="state" name="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="MH">Maharashtra</option>
+                                        <option value="DL">Delhi</option>
+                                        <option value="KA">Karnataka</option>
+                                        <option value="TN">Tamil Nadu</option>
+                                        <option value="UP">Uttar Pradesh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pincode">Pincode *</label>
+                                    <input type="text" id="pincode" name="pincode" maxlength="6" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="landmark">Landmark</label>
+                                    <input type="text" id="landmark" name="landmark">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="save_address">
+                                    <span>Save this address for future orders</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+                            <div class="payment-methods">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cod" checked>
+                                    <div class="payment-card">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>Cash on Delivery</span>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="card">
+                                    <div class="payment-card">
+                                        <i class="fas fa-credit-card"></i>
+                                        <span>Credit/Debit Card</span>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="upi">
+                                    <div class="payment-card">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <span>UPI</span>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="netbanking">
+                                    <div class="payment-card">
+                                        <i class="fas fa-university"></i>
+                                        <span>Net Banking</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span>I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="checkout-summary">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <div class="summary-item-image">
+                                <div class="placeholder-img small">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                            </div>
+                            <div class="summary-item-details">
+                                <h4>Premium Cotton T-Shirt</h4>
+                                <p>Size: M | Color: White</p>
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="summary-item-price">₹499</div>
+                        </div>
+
+                        <div class="summary-item">
+                            <div class="summary-item-image">
+                                <div class="placeholder-img small">
+                                    <i class="fas fa-vest"></i>
+                                </div>
+                            </div>
+                            <div class="summary-item-details">
+                                <h4>Denim Jacket</h4>
+                                <p>Size: L | Color: Blue</p>
+                                <p>Qty: 2</p>
+                            </div>
+                            <div class="summary-item-price">₹2,998</div>
+                        </div>
+
+                        <div class="summary-item">
+                            <div class="summary-item-image">
+                                <div class="placeholder-img small">
+                                    <i class="fas fa-socks"></i>
+                                </div>
+                            </div>
+                            <div class="summary-item-details">
+                                <h4>Casual Joggers</h4>
+                                <p>Size: M | Color: Black</p>
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="summary-item-price">₹899</div>
+                        </div>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row">
+                        <span>Subtotal (4 items)</span>
+                        <span>₹4,396</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span class="discount">-₹2,199</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Charges</span>
+                        <span class="free">FREE</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total">
+                        <span>Total Amount</span>
+                        <span>₹4,396</span>
+                    </div>
+
+                    <div class="savings-info">
+                        <i class="fas fa-check-circle"></i>
+                        <span>You will save ₹2,199 on this order</span>
+                    </div>
+
+                    <button type="submit" form="checkoutForm" class="btn btn-primary btn-full btn-large">
+                        Place Order <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Kart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
